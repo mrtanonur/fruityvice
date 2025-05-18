@@ -1,10 +1,12 @@
+import 'package:fruityvice/models/nutritions_model.dart';
+
 class FruitModel {
   String name;
   int id;
   String family;
   String order;
   String genus;
-  List<String> nutritions;
+  NutritionsModel nutritions;
 
   FruitModel(
       {required this.name,
@@ -21,7 +23,7 @@ class FruitModel {
         family: json["family"],
         order: json["order"],
         genus: json["genus"],
-        nutritions: json["nutritions"]);
+        nutritions: NutritionsModel.fromJson(json["nutritions"]));
   }
 
   Map<String, dynamic> toJson() {
