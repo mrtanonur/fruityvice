@@ -12,6 +12,20 @@ order, genus, and nutrition values. The app also includes dark theme support wit
   
 	•	🔄 State management with Provider
 
+	🛠️ Tech Stack
+	
+	•	Flutter (UI framework)
+	
+	•	Dart (programming language)
+	
+	•	Provider (state management)
+	
+	•	Dio (network requests)
+	
+	•	Fruityvice API (data source)
+	
+
+
 
 lib/
 
