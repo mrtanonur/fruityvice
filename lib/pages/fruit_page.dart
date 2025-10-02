@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fruityvice/models/fruit_model.dart';
 import 'package:fruityvice/pages/fruit_detail_page.dart';
 import 'package:fruityvice/providers/fruit_provider.dart';
-import 'package:fruityvice/services/fruit_service.dart';
 import 'package:provider/provider.dart';
 
 class FruitPage extends StatelessWidget {
@@ -10,7 +8,6 @@ class FruitPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FruitService fvService = FruitService();
     FruitProvider provider = context.read<FruitProvider>();
 
     return Scaffold(
@@ -36,7 +33,7 @@ class FruitPage extends StatelessWidget {
                           context,
                           MaterialPageRoute(
                               builder: (BuildContext context) =>
-                                  FruitDetailPage()));
+                                  const FruitDetailPage()));
                     },
                     leading: Text(snapshot.data![index].id.toString()),
                     title: Text(snapshot.data![index].name),
@@ -45,8 +42,9 @@ class FruitPage extends StatelessWidget {
                   );
                 },
               );
-            } else
-              return Text("ERROR");
+            } else {
+              return const Text("ERROR");
+            }
           },
         ),
       ),

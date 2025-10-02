@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:fruityvice/main.dart';
 import 'package:fruityvice/providers/settings_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -19,15 +18,15 @@ class SettingsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 "Settings",
                 style: TextStyle(fontWeight: FontWeight.w700, fontSize: 32),
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    "Koyu tema",
+                  const Text(
+                    "Dark Theme",
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w700),
                   ),
                   nativeSwitch(context),
@@ -47,7 +46,6 @@ Widget nativeSwitch(BuildContext context) {
       value: context.watch<SettingsProvider>().isDark,
       onChanged: (bool value) {
         context.read<SettingsProvider>().change(value);
-        //print(context.read<SettingsProvider>().isDark);
       },
     );
   } else {

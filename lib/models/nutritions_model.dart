@@ -23,7 +23,7 @@ class NutritionsModel {
       "calories": calories,
       "fat": fat,
       "sugar": sugar,
-      "carbonhydrates": carbohydrates,
+      "carbohydrates": carbohydrates,
       "protein": protein,
     };
   }

@@ -13,7 +13,8 @@ class FruitProvider extends ChangeNotifier {
     if (response != null) {
       fruits = response;
       return fruits;
-    } else
+    } else {
       return null;
+    }
   }
 }

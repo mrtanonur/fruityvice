@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:io';
+
 import 'package:dio/dio.dart';
 import 'package:fruityvice/models/fruit_model.dart';
 
@@ -20,7 +21,6 @@ class FruitService {
       }
       return null;
     } catch (e) {
-      print(e);
       return null;
     }
   }
