@@ -23,6 +23,8 @@ order, genus, and nutrition values. The app also includes dark theme support wit
 	•	Dio (network requests)
 	
 	•	Fruityvice API (data source)
+
+	•	FutureBuilder
 	
 
 
