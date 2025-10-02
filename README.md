@@ -14,8 +14,12 @@ order, genus, and nutrition values. The app also includes dark theme support wit
 
 
 lib/
+
 ├── models/          # Data models (Fruit, Nutritions)
+
 ├── pages/           # UI screens (Fruit list, detail, settings, main)
+
 ├── providers/       # State management (FruitProvider, SettingsProvider)
+
 ├── services/        # API service (Fruityvice API calls)
 
