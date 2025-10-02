@@ -37,3 +37,13 @@ lib/
 
 ├── services/        # API service (Fruityvice API calls)
 
+
+To clone this repo:
+
+git clone https://github.com/mrtanonur/fruityvice_flutter.git
+
+cd fruityvice_flutter
+
+flutter pub get
+
+flutter run
